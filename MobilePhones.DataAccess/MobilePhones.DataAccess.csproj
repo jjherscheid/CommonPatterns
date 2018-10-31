@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1EB7E89-5313-4231-982A-BEB9C975E6E7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CommonPatterns.Tools.Console</RootNamespace>
-    <AssemblyName>CommonPatterns.Tools.Console</AssemblyName>
+    <ProjectGuid>{01FB7B88-0C5B-4DB1-969C-72728228AC74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilePhones.DataAccess</RootNamespace>
+    <AssemblyName>MobilePhones.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -50,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MobilePhonesContext.cs" />
+    <Compile Include="MobilePhonesInitialize.cs" />
+    <Compile Include="MobilePhonesSeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,12 +58,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MobilePhones.DataAccess\MobilePhones.DataAccess.csproj">
-      <Project>{01fb7b88-0c5b-4db1-969c-72728228ac74}</Project>
-      <Name>MobilePhones.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MobilePhones.DataAcess.Model\MobilePhones.DataAcess.Model.csproj">
-      <Project>{588672be-2a2e-4bfc-93f3-2a871f62f732}</Project>
+      <Project>{588672BE-2A2E-4BFC-93F3-2A871F62F732}</Project>
       <Name>MobilePhones.DataAcess.Model</Name>
     </ProjectReference>
   </ItemGroup>
